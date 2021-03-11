@@ -16,9 +16,16 @@ SenPlot depends on the following packages:
 - ``basemap``
 - ``basemap-data-hires``
 
-
 If you are running python in a conda environment try:```conda install -c conda-forge --file requirements.txt``` 
 (often a better option). Otherwise you could try:```pip install -r requirements.txt```
+
+Beside the python packages above, the user needs to set the environment variable __PROJ_LIB__. 
+This can be done according to [add-windows-path-environment-variable](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/), 
+or by setting the path directly in the python script that you are about to run:
+```
+import os
+os.environ['PROJ_LIB'] = '/PYTHON_INSTALLATION_PATH/Library/share/proj'
+```
 
 Example Chlorophyll
 --------

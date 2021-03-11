@@ -4,6 +4,9 @@
 Created on 2021-03-11 16:08
 @author: johannes
 """
+# import os
+# os.environ['PROJ_LIB'] = '...\\envs\\__ENV_NAME__\\Library\\share\\proj'
+
 import numpy as np
 from datetime import datetime
 from satpy import Scene, find_files_and_readers
