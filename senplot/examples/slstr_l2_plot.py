@@ -33,7 +33,7 @@ if __name__ == '__main__':
     scn.load(datasets)
 
     """ Resample data to grid (projecting) """
-    area_spec = 'baws'  # 1000 m resolution grid over the Baltic Sea incl. Kattegatt and Skagerrak
+    # area_spec = 'baws'  # 1000 m resolution grid over the Baltic Sea incl. Kattegatt and Skagerrak
     # scn = scn.resample(area_spec, radius_of_influence=1000)
 
     """ Temperature data are stored as Kelvin degrees. Convert to Celsius values: """

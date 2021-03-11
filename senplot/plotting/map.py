@@ -159,4 +159,4 @@ class PlotSatProd:
     @staticmethod
     def save_figure(name='test_plot.png'):
         plt.tight_layout()
-        plt.savefig(name, bbox_inches='tight', dpi=300)
+        plt.savefig(name, bbox_inches='tight', dpi=100)

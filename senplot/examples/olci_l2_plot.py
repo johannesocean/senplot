@@ -42,14 +42,14 @@ if __name__ == '__main__':
     scn.load(datasets)
 
     """ Resample data to grid (projecting) """
-    area_spec = 'baws'  # 1000 m resolution grid over the Baltic Sea incl. Kattegatt and Skagerrak
+    # area_spec = 'baws'  # 1000 m resolution grid over the Baltic Sea incl. Kattegatt and Skagerrak
     # scn = scn.resample(area_spec, radius_of_influence=300)
 
     """ Chlorophyll data are stored as logarithmic values. Convert to real values: """
     scn['chl_nn'] = np.power(10, scn['chl_nn'])
 
     """ Simple plot """
-    scn['chl_nn'].plot()
+    # scn['chl_nn'].plot()
 
     """ Save as geotiff?.. and possibly drag into QGIS? """
     # scn.save_dataset(
@@ -63,20 +63,20 @@ if __name__ == '__main__':
     """ Advanced map plot. PlotSatProd needs to be cleaned up!!! 
         See PlotSatProd.__init__(...) for more options """
 
-    # lons, lats = scn['chl_nn'].area.get_lonlats()
-    # PlotSatProd(
-    #     data_mat=scn['chl_nn'].data,
-    #     lat_mat=lats,
-    #     lon_mat=lons,
-    #     cbar_label='Chl µg/l',
-    #     cmap_step=2,
-    #     max_tick=10,
-    #     min_tick=0,
-    #     resolution='i',
-    #     map_frame={'lat_min': 54., 'lat_max': 60., 'lon_min': 5., 'lon_max': 14.},
-    #     p_color=True,
-    #     show_fig=True,
-    #     save_fig=True,
-    #     fig_title='OLCI Level 2 - chl_nn - 2021-02-13',
-    #     fig_name='chl_test_plot.png',
-    # )
+    lons, lats = scn['chl_nn'].area.get_lonlats()
+    PlotSatProd(
+        data_mat=scn['chl_nn'].data,
+        lat_mat=lats,
+        lon_mat=lons,
+        cbar_label='Chl µg/l',
+        cmap_step=2,
+        max_tick=10,
+        min_tick=0,
+        resolution='i',
+        map_frame={'lat_min': 54., 'lat_max': 60., 'lon_min': 5., 'lon_max': 14.},
+        p_color=True,
+        show_fig=True,
+        save_fig=True,
+        fig_title='OLCI Level 2 - chl_nn - 2021-02-13',
+        fig_name='chl_test_plot.png',
+    )
