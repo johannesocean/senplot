@@ -11,9 +11,14 @@ for all details regarding Satpy.
 SenPlot depends on the following packages:
 
 - ``satpy``
+- ``numpy``
 - ``matplotlib``
 - ``basemap``
 - ``basemap-data-hires``
+
+
+If you are running python in a conda environment try:```conda install -c conda-forge --file requirements.txt``` 
+(often a better option). Otherwise you could try:```pip install -r requirements.txt```
 
 Example Chlorophyll
 --------
