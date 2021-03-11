@@ -5,7 +5,7 @@ Created on 2021-03-11 16:08
 @author: johannes
 """
 # import os
-# os.environ['PROJ_LIB'] = '...\\envs\\__ENV_NAME__\\Library\\share\\proj'
+# os.environ['PROJ_LIB'] = '/_PYTHON_INSTALLATION_PATH_/Library/share/proj'
 
 import numpy as np
 from datetime import datetime

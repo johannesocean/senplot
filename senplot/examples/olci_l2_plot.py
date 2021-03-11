@@ -5,7 +5,7 @@ Created on 2021-03-11 13:52
 @author: johannes
 """
 # import os
-# os.environ['PROJ_LIB'] = '...\\envs\\__ENV_NAME__\\Library\\share\\proj'
+# os.environ['PROJ_LIB'] = '/_PYTHON_INSTALLATION_PATH_/Library/share/proj'
 
 import numpy as np
 from datetime import datetime
@@ -62,7 +62,6 @@ if __name__ == '__main__':
 
     """ Advanced map plot. PlotSatProd needs to be cleaned up!!! 
         See PlotSatProd.__init__(...) for more options """
-
     lons, lats = scn['chl_nn'].area.get_lonlats()
     PlotSatProd(
         data_mat=scn['chl_nn'].data,

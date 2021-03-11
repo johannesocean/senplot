@@ -1,11 +1,11 @@
 # SenPlot
 Basically a place to gather example scripts to plot Sentinel 3 - data (OLCI and SLSTR) using the satpy library.
 
-See senplot/senplot/examples/
+See [script examples](https://github.com/JohannesSMHI/senplot/tree/main/senplot/examples)
+
 
 Install dependencies
 --------
-
 See the [installation docs](https://satpy.readthedocs.io/en/stable/install.html)
 for all details regarding Satpy. 
 SenPlot depends on the following packages:
@@ -22,9 +22,9 @@ If you are running python in a conda environment try:```conda install -c conda-f
 Beside the python packages above, the user needs to set the environment variable __PROJ_LIB__. 
 This can be done according to [add-windows-path-environment-variable](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/), 
 or by setting the path directly in the python script that you are about to run:
-```
+```python
 import os
-os.environ['PROJ_LIB'] = '/PYTHON_INSTALLATION_PATH/Library/share/proj'
+os.environ['PROJ_LIB'] = '/_PYTHON_INSTALLATION_PATH_/Library/share/proj'
 ```
 
 Example Chlorophyll
