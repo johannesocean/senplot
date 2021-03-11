@@ -2,4 +2,3 @@ numpy
 satpy
 matplotlib
 basemap
-netCDF4

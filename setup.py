@@ -26,12 +26,8 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/JohannesSMHI/senplot",
     packages=setuptools.find_packages(),
-    package_data={'senplot': [
-        os.path.join('etc', '*.xlsx'),
-        os.path.join('etc', 'readers', '*.yaml'),
-        os.path.join('etc', 'validators', '*.yaml'),
-        os.path.join('etc', 'writers', '*.yaml'),
-    ]},
+    # package_data={'senplot': [
+    # ]},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
